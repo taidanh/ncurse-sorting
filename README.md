@@ -14,3 +14,6 @@ You can build the program by running `make`
    - r seed         Specify random seed.
 
 > EX: `./sorting -h -r 1337` will run heap sort with a seed of 1337.
+> This is the output:
+
+![sort](https://user-images.githubusercontent.com/65222208/112743212-32595800-8f4a-11eb-927d-986460e58b7b.mp4)
