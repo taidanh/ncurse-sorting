@@ -1,7 +1,5 @@
 # NCurses Sorting Visualizer
 
----
-
 ## Build
 You can build the program by running `make`
 
