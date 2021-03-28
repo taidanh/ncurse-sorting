@@ -16,4 +16,4 @@ You can build the program by running `make`
 > EX: `./sorting -h -r 1337` will run heap sort with a seed of 1337.
 > This is the output:
 
-![sort](https://user-images.githubusercontent.com/65222208/112743212-32595800-8f4a-11eb-927d-986460e58b7b.mp4)
+![heap](https://user-images.githubusercontent.com/65222208/112743300-f672c280-8f4a-11eb-83e3-19f1dd70929c.gif)
