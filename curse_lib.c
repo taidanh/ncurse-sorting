@@ -5,12 +5,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#define MAX_HEIGHT 40
 #define PILLAR "#"
 #define DELAY 1000
 
 void draw_pillar(uint32_t col, uint32_t height, uint32_t max) {
-    for (uint32_t row = 0; row < MAX_HEIGHT; row += 1) {
+    for (uint32_t row = 0; row < max; row += 1) {
 	if (row >= (max - height)) {
 	    mvprintw(row, col, PILLAR);
 	} else {
