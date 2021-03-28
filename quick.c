@@ -11,6 +11,7 @@
 #include <stdlib.h>
 
 #define MULT 20
+#define NAME "QUICK"
 
 int64_t partition(uint32_t *A, uint32_t lo, uint32_t hi, uint32_t n, uint32_t height) {
     uint32_t pivot = A[lo + ((hi - lo) / 2)];
@@ -36,7 +37,7 @@ int64_t partition(uint32_t *A, uint32_t lo, uint32_t hi, uint32_t n, uint32_t he
             move_add(3);
             my_swap(&A[i], &A[j]);
         }
-	draw_array(A, n, height, MULT);
+	draw_array(A, n, height, MULT, NAME);
     } while (i < j);
     return j;
 }

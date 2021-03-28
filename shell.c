@@ -11,6 +11,7 @@
 #include <stdlib.h>
 
 #define MULT 15
+#define NAME "SHELL"
 
 void shell_sort(uint32_t *A, uint32_t n, uint32_t height) {
     initscr();
@@ -24,12 +25,12 @@ void shell_sort(uint32_t *A, uint32_t n, uint32_t height) {
                 my_swap(&A[j], &A[j - gaps[k]]);
                 move_add(3);
                 j -= gaps[k];
-		draw_array(A, n, height, MULT);
+		draw_array(A, n, height, MULT, NAME);
             }
             A[j] = temp;
         }
     }
-    draw_array(A, n, height, 200);
+    draw_array(A, n, height, 200, NAME);
     endwin();
     return;
 }

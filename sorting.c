@@ -14,7 +14,6 @@
 #include <sys/ioctl.h>
 
 #define OPTIONS "absqhr:"
-#define HEIGHT getmaxy(stdscr)
 
 enum Sorts { bubble = 1, shell = 2, quick = 3, heap = 4 };
 
@@ -149,7 +148,5 @@ int main(int argc, char **argv) {
 	printf("%d elements, %lu moves, %lu compares\n", n, moves, compares);
     }
 
-    printf("height = %d\n", height);
-    printf("width = %d\n", n);
     return 0;
 }

@@ -11,6 +11,7 @@
 #include <stdlib.h>
 
 #define MULT 30
+#define NAME "HEAP"
 
 uint32_t max_child(uint32_t *A, uint32_t first, uint32_t last) {
     uint32_t left = 2 * first;
@@ -39,7 +40,7 @@ void fix_heap(uint32_t *A, uint32_t first, uint32_t last, uint32_t n, uint32_t h
         } else {
             found = true;
         }
-	draw_array(A, n, height, MULT);
+	draw_array(A, n, height, MULT, NAME);
     }
 }
 

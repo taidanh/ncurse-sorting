@@ -10,6 +10,7 @@
 #include <ncurses.h>
 
 #define MULT 1
+#define NAME "BUBBLE"
 
 void bubble_sort(uint32_t *A, uint32_t n, uint32_t height) {
     bool swapped = true;
@@ -27,7 +28,7 @@ void bubble_sort(uint32_t *A, uint32_t n, uint32_t height) {
                 my_swap(&A[i], &A[i - 1]);
                 swapped = true;
             }
-	    draw_array(A, n, height, MULT);
+	    draw_array(A, n, height, MULT, NAME);
         }
         n -= 1;
     }
