@@ -1,4 +1,6 @@
 # NCurses Sorting Visualizer
+Visualizer with options to show sorts for bubble, shell, 
+quick and heap sorts. Also scales to terminal size.
 
 ## Build
 You can build the program by running `make`
